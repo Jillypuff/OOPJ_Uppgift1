@@ -8,7 +8,7 @@ public class CarnivorousPlant extends Flora{
     public double calculateWaterNeeded(){
         double baseWaterNeed = 0.1;
         double additionalWaterPerMeter = 0.2;
-        double heightInMeters = (double) this.getHeightInCM() / 100;
+        double heightInMeters = (double) getHeightInCM() / 100;
         double additionalWater = additionalWaterPerMeter * heightInMeters;
         return baseWaterNeed + additionalWater;
     }

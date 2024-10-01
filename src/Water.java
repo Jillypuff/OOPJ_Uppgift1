@@ -1,6 +1,8 @@
 public interface Water {
 
-    public double calculateWaterNeeded();
+    // Detta interface tvingar våra klasser att ha dom två metoder som är relevanta för programmet
 
-    public void printWaterNeeded();
+    double calculateWaterNeeded();
+
+    void printWaterNeeded();
 }

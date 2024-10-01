@@ -20,12 +20,13 @@ public abstract class Flora implements Water {
         this.species = species;
     }
 
+    // Alla specifika plantor ärver den här metoden så calculateWaterNeeded() kommer ge den plantas uträkning
     public void printWaterNeeded(){
         double waterNeeded = calculateWaterNeeded();
         waterNeeded = Math.round(waterNeeded * 100.0) / 100.0; // Forcera högst 2 decimaler
         String waterNeededPrompt = waterNeeded < 1 ? waterNeeded * 100 + " cl" : waterNeeded + " liter";
         JOptionPane.showMessageDialog(null,
-                "The " + this.species + " " + this.getName() + " needs " + waterNeededPrompt
+                "The " + this.species + " " + this.name + " needs " + waterNeededPrompt
                         + " of " + this.drink.getDisplayDrink() + " each day.");
     }
 

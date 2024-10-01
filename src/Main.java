@@ -7,7 +7,10 @@ public class Main {
     final private List<Flora> allFloras = new ArrayList<>();
 
     public Main(){
-        // Här är exempel av polymorphism då olika typer av växter alla läggs in i ett Flora objekt.
+        /* Här är exempel av polymorphism då olika typer av växter alla läggs in i ett Flora objekt.
+        Det gör att vi senare kan använda samma foreach loop och få olika resultat beroende på
+        vilken typ av objekt som används trotts att alla är av typen Flora.
+         */
         Flora igge = new Cactus(20,"Igge");
         Flora laura = new PalmTree(500, "Laura");
         Flora meatloaf = new CarnivorousPlant(70, "Meatloaf");
